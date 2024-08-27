@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Marina Mayumi Bartalini</h1>
+        <h1>Marina Mayumi</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre a Artista</a></li>
@@ -50,81 +50,90 @@
 
     <section id="obras">
         <h2>Obras</h2>
-
         <!-- Galeria de Imagens -->
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                <!-- Adicione mais indicadores conforme o número de imagens -->
-                            </ol> </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/01.JPG" class="d-block w-100" alt="Foto 1">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/02.JPG" class="d-block w-100" alt="Foto 2">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/03.JPG" class="d-block w-100" alt="Foto 3">
-                        </div>
-                    </div>
+        <div id="gallery" class="#">
+            <div class="tm-gallery-container">
+                <div class="col-sm-12">
+                    <h3 class="news_taital">Projeto Passarela</h3>
+                    <p class="news_text"> Breve descrição do projeto </p>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/04.JPG" class="d-block w-100" alt="Foto 4">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/05.JPG" class="d-block w-100" alt="Foto 5">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 01/06.JPG" class="d-block w-100" alt="Foto 6">
-                        </div>
-                    </div>
+                <div class="tm-gallery tm-mb-80">
+                    <figure class="effect-goliath tm-gallery-item" onclick="showProjectDetails('passarela')">
+                        <img src="images/passarela/Sequência de fotos 01/01.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Descrição da foto</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="images/passarela/Sequência de fotos 01/02.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Descrição da foto</p>
+                            <a href="images/passarela/Sequência de fotos 01/02.JPG"></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="images/passarela/Sequência de fotos 01/03.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Descrição da foto</p>
+                            <a href="images/passarela/Sequência de fotos 01/03.JPG"></a>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 02/01.JPG" class="d-block w-100" alt="Foto 7">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 02/02.JPG" class="d-block w-100" alt="Foto 8">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="images/passarela/Sequência de fotos 02/03.JPG" class="d-block w-100" alt="Foto 9">
-                        </div>
-                    </div>
-                </div>
+                <div class="tm-paging tm-mb-130"></div>
             </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-
-        <!-- Descrição do Projeto Passarela -->
-        <div class="projeto-descricao mt-4">
-            <h3>PASSARELA | Registro fotográfico de Ação em via pública | Coleta Coletivo | 2007</h3>
-            <p>
-                Passarela foi uma ação em espaço público que visava apontar um problema em uma ciclovia na cidade de Campinas que curiosamente terminava numa rotatória. A intervenção consistia em imitar a estética das pinturas de sinalização urbana para fazer com que a ciclovia continuasse atravessando a rotatória e permitindo que ciclistas seguissem seu caminho continuamente sem nenhuma interrupção. Após a intervenção os carros passaram a respeitar as novas linhas pintadas, parando em meio a rotatória para que as bicicletas passassem. Esta ação foi realizada pelo Coleta Coletivo em 2007. Formado pelas e pelos artistas Marina Mayumi, Bruna Zanolli, Bruno Baptistelli, Pedro Campanha, Talita Caselato, o coletivo atuou entre os anos 2006 a 2009 em Campinas - SP.
-            </p>
+          <!-- Detalhes do Projeto -->
+          <div id="project-details" style="display: none;">
+            <h2>PASSARELA| Registro fotográfico de Ação em via pública | Coleta Coletivo | 2007.</h2>
+            <p>Passarela foi uma ação em espaço público que visava apontar um problema em uma ciclovia na cidade de Campinas que curiosamente terminava numa rotatória. A intervenção consistia em imitar a estética das pinturas de sinalização urbana para fazer com que a ciclovia continuasse atravessando a rotatória e permitindo que ciclistas seguissem seu caminho continuamente sem nenhuma interrupção. Após a intervenção os carros passaram a respeitar as novas linhas pintadas parando em meio a rotatória para que as bicicletas passassem.. Esta ação foi realizada pelo Coleta Coletivo em 2007. Formado pelas e pelos artistas Marina Mayumi, Bruna Zanolli, Bruno Baptistelli, Pedro Campanha, Talita Caselato, o coletivo atuou entre os anos 2006 a 2009 em Campinas - SP.</p>
+            <div id="project-gallery" class="tm-gallery">
+                <!-- Novas imagens relacionadas ao projeto serão carregadas aqui -->
+            </div>
+            <button onclick="goBack()">Voltar</button>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Marina Mayumi. Todos os direitos reservados.</p>
     </footer>
-
+    <script>
+        function showProjectDetails(project) {
+            document.getElementById('gallery').style.display = 'none';
+            document.getElementById('project-details').style.display = 'block';
+    
+            var projectGallery = document.getElementById('project-gallery');
+            projectGallery.innerHTML = ''; // Limpa o conteúdo anterior
+    
+            if (project === 'passarela') {
+                projectGallery.innerHTML += `
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="images/passarela/Sequência de fotos 02/01.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Nova descrição da foto</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="images/passarela/Sequência de fotos 02/02.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Nova descrição da foto</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-goliath tm-gallery-item">
+                        <img src="images/passarela/Sequência de fotos 02/03.JPG" alt="Image" />
+                        <figcaption>
+                            <p>Nova descrição da foto</p>
+                        </figcaption>
+                    </figure>
+                `;
+            }
+            // Adicione mais condições para outros projetos, se necessário
+        }
+    
+        function goBack() {
+            document.getElementById('gallery').style.display = 'block';
+            document.getElementById('project-details').style.display = 'none';
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
